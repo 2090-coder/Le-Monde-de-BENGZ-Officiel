@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Monde de BENGZ - Événements</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<style>
+  body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #0b0c10, #1f2833);
+    color: #fff;
+    overflow-x: hidden;
+  }
+
+  .content {
+    padding: 2rem;
+    position: relative;
+  }
+
+  .page h1 {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    color: #66fcf1;
+  }
+
+  .page p {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .cards {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+
+  .card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(102, 252, 241, 0.2);
+    transition: 0.3s;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(102, 252, 241, 0.4);
+  }
+
+  .card h3 {
+    color: #66fcf1;
+  }
+
+  .card a {
+    color: #45a29e;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .card a:hover {
+    text-decoration: underline;
+  }
+
+  /* Filigrane */
+  .watermark {
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    opacity: 0.12;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #66fcf1;
+    z-index: 1;
+  }
+
+  .watermark img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+  }
+
+  .sidebar .brand img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .sidebar-header {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .brand-text span {
+    color: #66fcf1;
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <div class="brand">
+        <img src="images/logobengz.png" alt="Logo BENGZ">
+        <div class="brand-text">Le Monde <span>BENGZ</span></div>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="projets.html">Projets</a>
+      <a href="actualites.html">Actualités</a>
+      <a href="evenements.html" class="active">Événements</a>
+      <a href="ressources.html">Ressources</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="sidebar-footer">
+      <small>Footer By Electro-Mind BENGZ – Designer SALOMON SHUKURU ASSA</small>
+    </div>
+  </aside>
+
+  <main class="content">
+    <section class="page">
+      <h1>Événements du monde</h1>
+      <p>Voici les événements et formations technologiques les plus marquants à travers le monde.</p>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Sommet mondial de l’IA – Tokyo</h3>
+          <p>Les experts en intelligence artificielle se réunissent pour discuter de l’avenir des technologies émergentes.</p>
+          <a href="#">Voir détails →</a>
+        </article>
+
+        <article class="card">
+          <h3>Salon de l’électronique – Berlin</h3>
+          <p>Présentation des dernières innovations en robotique, IoT et microcontrôleurs.</p>
+          <a href="#">Voir détails →</a>
+        </article>
+
+        <article class="card">
+          <h3>Conférence DevFest Google</h3>
+          <p>Une rencontre mondiale pour les développeurs passionnés par les technologies web et mobiles.</p>
+          <a href="#">Voir détails →</a>
+        </article>
+
+        <article class="card">
+          <h3>Hackathon AfricaTech</h3>
+          <p>Des jeunes innovateurs africains se réunissent pour créer des solutions technologiques locales.</p>
+          <a href="#">Voir détails →</a>
+        </article>
+      </div>
+    </section>
+  </main>
+</div>
+
+<!-- Filigrane -->
+<div class="watermark">
+  <img src="images/profilbengz.png" alt="Profil BENGZ">
+  <div>Producer SALOMON BENGZ</div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

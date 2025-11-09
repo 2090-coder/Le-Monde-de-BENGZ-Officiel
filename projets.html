@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Monde de BENGZ - Projets</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<style>
+/* Filigrane photo de profil */
+.profile-watermark {
+  position: fixed;
+  top: 50px;
+  right: 30px;
+  width: 120px;
+  height: auto;
+  opacity: 0.15; /* peu visible */
+  border-radius: 50%;
+  text-align: center;
+  pointer-events: none;
+  z-index: 10;
+  font-family: 'Orbitron', sans-serif;
+  color: #00ff99;
+}
+
+.profile-watermark img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.profile-watermark span {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #00ff99;
+  font-weight: 600;
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <!-- Menu / Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <div class="brand">
+        <img src="images/logobengz.png" alt="Logo Le Monde de BENGZ" class="logo">
+        <div class="brand-text">Le Monde <span>BENGZ</span></div>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="projets.html" class="active">Projets</a>
+      <a href="actualites.html">Actualités</a>
+      <a href="contact.html">Contact</a>
+      <a href="evenements.html">Événements</a>
+      <a href="ressources.html">Ressources</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <div class="sidebar-footer">
+      <small>Footer By Electro-Mind BENGZ – Designer SALOMON SHUKURU ASSA</small>
+    </div>
+  </aside>
+
+  <!-- Filigrane photo de profil -->
+  <div class="profile-watermark">
+    <img src="images/profilbengz.png" alt="Profil SALOMON BENGZ">
+    <span>Producer SALOMON BENGZ</span>
+  </div>
+
+  <!-- Main content -->
+  <main class="content">
+    <section class="page">
+      <h1>Nos Projets</h1>
+      <p>Découvrez tous nos projets en électronique, programmation et créations technologiques.</p>
+
+      <div class="cards">
+        <!-- Début des cartes -->
+        <article class="card">
+          <h3>Projet Arduino - Lave-Mains Automatique</h3>
+          <p>Système automatique de lavage de mains avec capteur et servomoteur pour distribuer savon et eau.</p>
+          <a href="#">Voir plus →</a>
+        </article>
+
+        <article class="card">
+          <h3>Application Mobile - Suivi de Voiture</h3>
+          <p>App pour localiser une voiture en temps réel avec envoi de notifications SMS et liens Google Maps.</p>
+          <a href="#">Voir plus →</a>
+        </article>
+
+        <article class="card">
+          <h3>Mini-Robot Évitant les Obstacles</h3>
+          <p>Robot contrôlé par Arduino et Bluetooth capable d’éviter automatiquement les obstacles.</p>
+          <a href="#">Voir plus →</a>
+        </article>
+
+        <article class="card">
+          <h3>Projet Énergie Solaire</h3>
+          <p>Système solaire autonome pour alimenter des petits appareils électroniques.</p>
+          <a href="#">Voir plus →</a>
+        </article>
+
+        <article class="card">
+          <h3>Mini-Drone Programmable</h3>
+          <p>Drone télécommandé avec Arduino et capteurs pour stabilisation et navigation.</p>
+          <a href="#">Voir plus →</a>
+        </article>
+
+        <article class="card">
+          <h3>Projet IoT Maison Connectée</h3>
+          <p>Contrôle des lumières et appareils via une application mobile et capteurs connectés.</p>
+          <a href="#">Voir plus →</a>
+        </article>
+
+        <article class="card">
+          <h3>Assistant Vocal BENGZ</h3>
+          <p>Assistant vocal maison utilisant reconnaissance vocale pour exécuter des commandes simples.</p>
+          <a href="#">Voir plus →</a>
+        </article>
+
+        <article class="card">
+          <h3>Robot Suiveur de Ligne</h3>
+          <p>Robot autonome qui suit une ligne tracée sur le sol grâce à des capteurs infrarouges.</p>
+          <a href="#">Voir plus →</a>
+        </article>
+
+        <!-- Tu peux dupliquer ces cartes autant que tu veux -->
+      </div>
+    </section>
+  </main>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

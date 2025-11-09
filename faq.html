@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Monde de BENGZ - FAQ</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+
+<style>
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #0b0c10, #1f2833);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.content {
+  padding: 2rem;
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  color: #66fcf1;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #c5c6c7;
+}
+
+/* Carte FAQ */
+.faq-item {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 1rem;
+  margin: 1rem auto;
+  padding: 1.2rem;
+  width: 100%;
+  max-width: 800px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(102, 252, 241, 0.1);
+}
+
+.faq-item:hover {
+  box-shadow: 0 0 20px rgba(102, 252, 241, 0.3);
+}
+
+.faq-item h3 {
+  color: #66fcf1;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.faq-item p {
+  display: none;
+  margin-top: 10px;
+  color: #c5c6c7;
+  line-height: 1.6;
+}
+
+.faq-item.active p {
+  display: block;
+}
+
+/* Filigrane photo */
+.watermark {
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  opacity: 0.12;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #66fcf1;
+  z-index: 1;
+}
+
+.watermark img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+
+/* Logo du menu */
+.sidebar .brand img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.brand-text span {
+  color: #66fcf1;
+}
+</style>
+</head>
+
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <div class="brand">
+        <img src="images/logobengz.png" alt="Logo BENGZ">
+        <div class="brand-text">Le Monde <span>BENGZ</span></div>
+      </div>
+    </div>
+
+    <nav class="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="projets.html">Projets</a>
+      <a href="actualites.html">Actualités</a>
+      <a href="evenements.html">Événements</a>
+      <a href="ressources.html">Ressources</a>
+      <a href="faq.html" class="active">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <small>Footer By Electro-Mind BENGZ – Designer SALOMON SHUKURU ASSA</small>
+    </div>
+  </aside>
+
+  <main class="content">
+    <section class="page">
+      <h1>FAQ - Questions Fréquentes</h1>
+      <p>Retrouvez ici les réponses aux questions les plus posées par nos membres et visiteurs.</p>
+
+      <div class="faq-item">
+        <h3>Comment rejoindre le groupe BENGZ ?</h3>
+        <p>Rendez-vous dans la section <b>Contact</b> du site et cliquez sur le lien WhatsApp pour rejoindre la communauté directement.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Comment soumettre un projet au groupe ?</h3>
+        <p>Vous pouvez soumettre un projet via le <b>formulaire de contact</b> ou en l’envoyant à un administrateur sur WhatsApp.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Les ressources et tutoriels sont-ils gratuits ?</h3>
+        <p>Oui ! Toutes les ressources, guides et formations du site sont accessibles gratuitement pour les membres du groupe.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Où suivre les prochains événements ?</h3>
+        <p>Consultez la page <b>Événements</b> pour découvrir les ateliers, formations et rencontres programmées.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Comment devenir membre officiel de l’équipe BENGZ ?</h3>
+        <p>Participez activement aux projets et formations. Les membres les plus impliqués peuvent être intégrés dans le staff officiel.</p>
+      </div>
+    </section>
+  </main>
+</div>
+
+<!-- Filigrane -->
+<div class="watermark">
+  <img src="images/profilbengz.png" alt="Profil BENGZ">
+  <div>Producer SALOMON BENGZ</div>
+</div>
+
+<script>
+// Animation FAQ : ouvrir/fermer
+document.querySelectorAll('.faq-item').forEach(item => {
+  item.addEventListener('click', () => {
+    item.classList.toggle('active');
+  });
+});
+</script>
+
+<script src="js/script.js"></script>
+</body>
+</html>
